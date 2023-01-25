@@ -1,3 +1,7 @@
+.inverted-color {
+  filter: invert(.5) !important;
+}
+
 .nuxt-content {
     /* padding-left: calc(2 * var(--font-size)); */
     opacity: .9;

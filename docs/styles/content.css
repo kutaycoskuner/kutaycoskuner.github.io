@@ -118,6 +118,7 @@
   
   .nuxt-content a {
     text-decoration: none;
+    overflow-wrap: break-word;
   }
   
   .nuxt-content a:hover {

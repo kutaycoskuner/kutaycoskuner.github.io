@@ -34,8 +34,8 @@
     --color-transparent4: rgba(14,22,27, var(--level4-opacity));
     --icon-glow: #cccccc;
     --color-border: #ddd;
-    --bg: #f3f5f4;
-    --bg-transparent: rgba(243,245,244, var(--level1-opacity));
+    --bg: #f6f6f6; /* #f1e7d0 */
+    --bg-transparent: rgba(246,246,246, var(--level1-opacity)); /* 243, 245, 244*/
     --bg-secondary: #e8eced;
     --bg-thertiary: #e0e0e0;
   }
@@ -71,8 +71,8 @@
     --color-transparent4: rgba(92,96,95, var(--level4-opacity));
     --icon-glow: #aaaaaa;
     --color-border: #626262;
-    --bg: #121212;
-    --bg-transparent: rgba(22,22,22, var(--bg-transparency));
+    --bg: #090909; /* 121212*/
+    --bg-transparent: rgba(9,9,9, var(--level1-opacity)); /*22, 22, 22*/
     --bg-secondary: #202020;
     --bg-thertiary: #282828;
   }
@@ -88,8 +88,8 @@
     --color-transparent4: rgba(26,20,13, var(--level4-opacity));
     --icon-glow: #b29f87;
     --color-border: #ded0bf;
-    --bg: #f1e7d0;
-    --bg-transparent: rgba(241,231,208, var(--bg-transparency));
+    --bg: #f1e7d0; 
+    --bg-transparent: rgba(241,231,208, var(--level1-opacity));
     --bg-secondary: #eae0c9;
     --bg-thertiary: #dbcea9;
   }

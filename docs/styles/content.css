@@ -1,148 +1,189 @@
 .inverted-color {
-  filter: invert(.5) !important;
+  filter: invert(0.5) !important;
 }
 
 .nuxt-content {
-    /* padding-left: calc(2 * var(--font-size)); */
-    opacity: .9;
-  }
-  
-  .nuxt-content span:first-of-type {
-    padding: 0;
-    padding-left: var(--font-size);
-    text-transform: uppercase;
-    font-size: calc(.7 * var(--font-size));
-    opacity: 1;
-  }
-  
-  .nuxt-content pre span {
-    padding: 0 !important;
-    text-transform: normal;
-    font-size: calc(var(--font-size));
-  }
-  
-  
-  .nuxt-content-highlight {
-    border-radius: var(--border-radius);
-    background: var(--bg-thertiary);
-  }
-  
-  .nuxt-content div pre {
-    position: relative;
-    background: var(--bg-secondary);
-    border-radius: var(--border-radius);
-    word-wrap: break-word;
-    white-space: normal;
-    opacity: var(--level1-opacity);
-    padding-left: calc(2 * var(--font-size));
-    padding-right: calc(2 * var(--font-size));
-  }
-  
-  .nuxt-content h3 {
-    color: #C1841F;
-    margin-top: calc(var(--font-size));
-    margin-bottom: var(--font-size);
-  }
-  
-  .nuxt-content h4 {
-    color: #734c8c;
-    padding-bottom: var(--font-size);
-  }
-  
-  .nuxt-content h5 {
-    color: #249BB2;
-  }
-  /* 
+  /* padding-left: calc(2 * var(--font-size)); */
+  opacity: 0.9;
+}
+
+.nuxt-content span:first-of-type {
+  padding: 0;
+  padding-left: var(--font-size);
+  text-transform: uppercase;
+  font-size: calc(0.7 * var(--font-size));
+  opacity: 1;
+}
+
+.nuxt-content pre span {
+  padding: 0 !important;
+  text-transform: normal;
+  font-size: calc(var(--font-size));
+}
+
+.nuxt-content-highlight {
+  border-radius: var(--border-radius);
+  background: var(--bg-thertiary);
+}
+
+.nuxt-content div pre {
+  position: relative;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  word-wrap: break-word;
+  white-space: normal;
+  opacity: var(--level1-opacity);
+  padding-left: calc(2 * var(--font-size));
+  padding-right: calc(2 * var(--font-size));
+}
+
+.nuxt-content h1 {
+  color: var(--color-transparent2);
+  font-size: calc(1.2 * var(--font-size));
+  margin-top: calc(var(--font-size));
+  margin-bottom: calc(0.2 * var(--font-size));
+}
+
+.nuxt-content h1 a {
+  display: none;
+}
+
+.nuxt-content h2 {
+  color: var(--color-primary);
+  opacity: var(--level2-opacity);
+  font-size: calc(1.2 * var(--font-size));
+  margin-top: calc(var(--font-size));
+  margin-bottom: calc(0.2 * var(--font-size));
+}
+
+.nuxt-content h2 a {
+  display: none;
+}
+
+.nuxt-content h3 {
+  color: #c1841f;
+  font-size: calc(1.2 * var(--font-size));
+  margin-top: calc(var(--font-size));
+  margin-bottom: calc(0.2 * var(--font-size));
+}
+
+.nuxt-content h4 {
+  color: #734c8c;
+  padding-bottom: var(--font-size);
+}
+
+.nuxt-content h5 {
+  color: #249bb2;
+}
+/* 
   .nuxt-content h3:not(:first-child) {
     margin-top: calc(var(--font-size));
   } */
-  
-  .nuxt-content p {
-    margin-bottom: var(--font-size);
-  }
-  
-  .nuxt-content table {
-    width: 100%;
-    margin-bottom: calc(3 * var(--font-size));
-    margin-top: calc(3 * var(--font-size));
-    border: 0px solid #ccc;
-    border-collapse: collapse;
-  }
-  
-  .nuxt-content table td {
-    padding: 4px 6px 4px 6px ;
-    border: 1px solid var(--color-transparent4);
-    border-top: 0px;
-    word-break: break-all;
-    word-break: break-word;
-    overflow: hidden;
-    white-space: pre-line;
-  }
-  
-  .nuxt-content table tr:first-child th {
-    border-top: 0;
-  }
-  
-  .nuxt-content table tr:last-child td {
-    border-bottom: 0;
-  }
-  
-  .nuxt-content table tr td:first-child,
-  .nuxt-content table tr th:first-child {
-    border-left: 0;
-  }
-  .nuxt-content table tr td:last-child,
-  .nuxt-content table tr th:last-child {
-    border-right: 0;
-  }
-  
-  .nuxt-content table thead {
-    border-bottom: 1px solid var(--color-transparent4);
-  }
-  
-  .nuxt-content hr {
-    opacity: 0.2;
-  }
-  
-  .nuxt-content ul li {
-    opacity: .8;
-  }
-  
-  .nuxt-content ul li:last-child {
-    margin-bottom: calc(1 * var(--font-size));
-  }
-  
-  .nuxt-content div pre code {
-    color: var(--color-secondary);
-  }
-  
-  .nuxt-content a {
-    text-decoration: none;
-    overflow-wrap: break-word;
-  }
-  
-  .nuxt-content a:hover {
-    color: var(--color-link-hover);
-  }
-  
-  .nuxt-content a:active {
-    color: var(--color-link-active);
-  }
+
+.nuxt-content p {
+  margin-bottom: var(--font-size);
+}
+
+.nuxt-content table {
+  width: 100%;
+  margin-bottom: calc(3 * var(--font-size));
+  margin-top: calc(3 * var(--font-size));
+  border: 0px solid #ccc;
+  border-collapse: collapse;
+}
+
+.nuxt-content table td {
+  padding: 4px 6px 4px 6px;
+  border: 1px solid var(--color-transparent4);
+  border-top: 0px;
+  word-break: break-all;
+  word-break: break-word;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.nuxt-content table tr:first-child th {
+  border-top: 0;
+}
+
+.nuxt-content table tr:last-child td {
+  border-bottom: 0;
+}
+
+.nuxt-content table tr td:first-child,
+.nuxt-content table tr th:first-child {
+  border-left: 0;
+}
+.nuxt-content table tr td:last-child,
+.nuxt-content table tr th:last-child {
+  border-right: 0;
+}
+
+.nuxt-content table thead {
+  border-bottom: 1px solid var(--color-transparent4);
+}
+
+.nuxt-content hr {
+  opacity: 0.2;
+}
+
+.nuxt-content ul li {
+  opacity: 0.8;
+}
+
+.nuxt-content ul li:last-child {
+  margin-bottom: calc(1 * var(--font-size));
+}
+
+.nuxt-content div pre code {
+  color: var(--color-secondary);
+}
+
+.nuxt-content a {
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.nuxt-content a:hover {
+  color: var(--color-link-hover);
+}
+
+.nuxt-content a:active {
+  color: var(--color-link-active);
+}
 
 .nuxt-content img {
   width: 100%;
   height: 100%;
+  /* border-radius: 2px; */
 }
 
-  .nuxt-content .caption {
-    font-weight: bold;
-    font-family: "Walter Turncoat", sans-serif;
-    text-align: center;
-    margin-bottom: calc(3 * var(--font-size));
-  }
-  
-  .except {
-    margin: 0;
-    padding: 0;
-  }
-  
+.nuxt-content .img40 {
+
+  margin: calc(2 * var(--font-size)) auto 0 auto;
+  width: 40%;
+}
+
+.nuxt-content .img60 {
+
+  margin: calc(2 * var(--font-size)) auto 0 auto;
+  width: 60%;
+}
+
+.nuxt-content .img80 {
+
+  margin: calc(2 * var(--font-size)) auto 0 auto;
+  width: 80%;
+}
+
+.nuxt-content .caption {
+  font-weight: bold;
+  font-family: "Walter Turncoat", sans-serif;
+  text-align: center;
+  margin-bottom: calc(3 * var(--font-size));
+}
+
+.except {
+  margin: 0;
+  padding: 0;
+}

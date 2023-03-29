@@ -7,6 +7,10 @@
   opacity: 0.9;
 }
 
+.nuxt-content .hide {
+  display: none;
+}
+
 .nuxt-content span:first-of-type {
   padding: 0;
   padding-left: var(--font-size);

@@ -8,7 +8,7 @@
 }
 
 .nuxt-content .hide {
-  display: none;
+  display: none !important;
 }
 
 .nuxt-content span:first-of-type {

@@ -16,11 +16,13 @@
     --page-width-max: 1920px;
     --font-size: 1em;
     --border-radius: 4px;
+    --highlight-border-radius: 2px;
     /* ---------- Other ----------- */
     --level1-opacity: 0.8;
     --level2-opacity: 0.6;
     --level3-opacity: 0.4;
     --level4-opacity: 0.2;
+    --opacity-06: 0.06;
     --main-blur: blur(2px);
     /* ---------- Colors ----------- */
     --color: #243746;
@@ -32,12 +34,29 @@
     --color-transparent2: rgba(14,22,27, var(--level2-opacity));
     --color-transparent3: rgba(14,22,27, var(--level3-opacity));
     --color-transparent4: rgba(14,22,27, var(--level4-opacity));
-    --icon-glow: #cccccc;
     --color-border: #ddd;
+    --col-highlight: rgba(232,236,237, var(--level1-opacity));
+    --icon-glow: #cccccc;
     --bg: #f6f6f6; /* #f1e7d0 */
+    --bg-alter: #f2f2f2;
     --bg-transparent: rgba(246,246,246, var(--level1-opacity)); /* 243, 245, 244*/
     --bg-secondary: #e8eced;
     --bg-thertiary: #e0e0e0;
+    /* ---------- Theme Independent Colors ----------- */
+    /* --s-col-whit: #f6f6f6; */
+    /* --s-col-blac: #090909; */
+    --s-col-blue: #06b4ba;
+    --s-col-viol: #da1991;
+    --s-col-gree: #3cba06; 
+    --s-col-yell: #e6cc00;
+    --s-col-teal: #008080;
+    --s-col-oran: #ffa100;
+    --s-col-oliv: #6b8e23;
+    /* ---------- Theme independent highlight colors ----------- */
+    --s-col-hl-teal: rgba(0,50,50, var(--opacity-06));
+    --s-col-hl-oran: rgba(100,63,0, var(--opacity-06));
+    --s-col-hl-oliv: rgba(107,142,35, var(--opacity-06));
+
   }
     /* ---------- Dimensions Setup ------------- */
     @media (max-width: 480px) {
@@ -69,9 +88,11 @@
     --color-transparent2: rgba(92,96,95, var(--level2-opacity));
     --color-transparent3: rgba(92,96,95, var(--level3-opacity));
     --color-transparent4: rgba(92,96,95, var(--level4-opacity));
-    --icon-glow: #aaaaaa;
     --color-border: #626262;
+    --col-highlight: rgba(32,32,32, 1);
+    --icon-glow: #aaaaaa;
     --bg: #090909; /* 121212*/
+    --bg-alter: #121212;
     --bg-transparent: rgba(9,9,9, var(--level1-opacity)); /*22, 22, 22*/
     --bg-secondary: #202020;
     --bg-thertiary: #282828;
@@ -89,6 +110,7 @@
     --icon-glow: #b29f87;
     --color-border: #ded0bf;
     --bg: #f1e7d0; 
+    --bg-alter: #f1e760;
     --bg-transparent: rgba(241,231,208, var(--level1-opacity));
     --bg-secondary: #eae0c9;
     --bg-thertiary: #dbcea9;

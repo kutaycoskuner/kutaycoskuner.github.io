@@ -61,7 +61,8 @@
 }
 
 .nuxt-content h3 {
-  color: #c1841f;
+  color: #734c8c;
+  /* color: #c1841f; */
   font-size: calc(1.2 * var(--font-size));
   margin-top: calc(var(--font-size));
   margin-bottom: calc(0.2 * var(--font-size));
@@ -106,6 +107,10 @@
   border-top: 0;
 }
 
+.nuxt-content table tr:nth-child(even) {
+  background: var(--bg-alter);
+}
+
 .nuxt-content table tr:last-child td {
   border-bottom: 0;
 }
@@ -128,7 +133,7 @@
 }
 
 .nuxt-content ul li {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .nuxt-content ul li:last-child {

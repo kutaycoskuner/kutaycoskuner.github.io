@@ -1,0 +1,84 @@
+/* ------------------------------ */
+/* local variables                */
+/* ------------------------------ */
+
+/* ------------------------------ */
+/* cases                          */
+/* ------------------------------ */
+
+.nom {
+  color: var(--s-col-gree);
+}
+
+.akk {
+  color: var(--s-col-blue);
+}
+
+.dat {
+  color: var(--s-col-viol);
+}
+
+.gen {
+  color: var(--s-col-yell);
+}
+
+/* ------------------------------ */
+/* positions                      */
+/* ------------------------------ */
+.pos1 {
+  background-color: var(--s-col-hl-oliv);
+  color: var(--s-col-oliv);
+  border-radius: var(--highlight-border-radius);
+  padding: 0.1em 0.2em;
+}
+
+.pos2 {
+  background-color: var(--s-col-hl-teal);
+  color: var(--s-col-teal);
+  border-radius: var(--highlight-border-radius);
+  padding: 0.1em 0.2em;
+}
+
+.pos-1 {
+  background-color: var(--s-col-hl-oran);
+  color: var(--s-col-oran);
+  border-radius: var(--highlight-border-radius);
+  padding: 0.1em 0.2em;
+}
+
+/* ------------------------------ */
+/* object types                   */
+/* ------------------------------ */
+.kon 
+{
+  padding: 0 4px 0 2px;
+  border-width: thin;
+  border-style: dashed;
+  border-color: var(--color-transparent2);
+  border-radius: var(--highlight-border-radius);
+}
+
+/* ------------------------------ */
+/* line highlights                */
+/* ------------------------------ */
+
+
+
+.hl /* konnektor*/ {
+  position: relative;
+}
+
+.hl::before {
+  /* Highlight color */
+  background-color: var(--bg-thertiary);
+  border-radius: var(--highlight-border-radius);
+  /* border-style: dotted; */
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 128%;
+  left: -2px;
+  bottom: 0;
+  z-index: -2;
+  transform: rotate(-1deg);
+}

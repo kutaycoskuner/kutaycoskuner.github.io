@@ -36,6 +36,10 @@
     --color-transparent4: rgba(14,22,27, var(--level4-opacity));
     --color-border: #ddd;
     --col-highlight: rgba(232,236,237, var(--level1-opacity));
+    --col-hl-1: rgba(232,236,237, var(--level1-opacity));
+    --col-hl-2: rgba(232,236,237, var(--level2-opacity));
+    --col-hl-3: rgba(232,236,237, var(--level3-opacity));
+    --col-hl-4: rgba(232,236,237, var(--level4-opacity));
     --icon-glow: #cccccc;
     --bg: #f6f6f6; /* #f1e7d0 */
     --bg-alter: #f2f2f2;
@@ -52,11 +56,17 @@
     --s-col-teal: #008080;
     --s-col-oran: #ffa100;
     --s-col-oliv: #6b8e23;
+    --s-col-mage: #a64ca6;
     /* ---------- Theme independent highlight colors ----------- */
     --s-col-hl-teal: rgba(0,50,50, var(--opacity-06));
     --s-col-hl-oran: rgba(100,63,0, var(--opacity-06));
     --s-col-hl-oliv: rgba(107,142,35, var(--opacity-06));
+    --s-col-hl-mage: rgba(166,76,166, var(--opacity-06));
 
+    --s-col-hl-teal2: rgba(0,50,50, var(--level4-opacity));
+    --s-col-hl-oran2: rgba(100,63,0, var(--level4-opacity));
+    --s-col-hl-oliv2: rgba(107,142,35, var(--level4-opacity));
+    --s-col-hl-mage2: rgba(166,76,166, var(--level4-opacity));
   }
     /* ---------- Dimensions Setup ------------- */
     @media (max-width: 480px) {

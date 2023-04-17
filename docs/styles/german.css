@@ -53,7 +53,7 @@
 {
   padding: 0 4px 0 2px;
   border: var(--color-transparent2);
-  background: var(--s-col-hl-oran2);
+  background: var(--s-col-hl-turq);
   position: relative;
   border-radius: var(--highlight-border-radius);
   /* border-width: thin; */
@@ -82,7 +82,7 @@
 .pra /* präposition */
 {
   padding: 0 4px 0 2px;
-  background: var(--s-col-hl-mage2);
+  background: var(--s-col-hl-purp);
   position: relative;
   border-radius: var(--highlight-border-radius);
 }
@@ -103,6 +103,60 @@
 }
 
 .pra:hover::before {
+  opacity: 0.8;
+}
+
+.adv /* präposition */
+{
+  padding: 0 4px 0 2px;
+  background: var(--s-col-hl-yell);
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.adv::before {
+  content: "adv";
+  font-size: 0.7em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: -40%;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.adv:hover::before {
+  opacity: 0.8;
+}
+
+.adj /* präposition */
+{
+  padding: 0 4px 0 2px;
+  background: var(--s-col-hl-gree);
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.adj::before {
+  content: "adj";
+  font-size: 0.7em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: -40%;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.adj:hover::before {
   opacity: 0.8;
 }
 

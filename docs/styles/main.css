@@ -23,6 +23,8 @@
     --level3-opacity: 0.4;
     --level4-opacity: 0.2;
     --opacity-06: 0.06;
+    --opa-10: 0.10;
+    --opa-15: 0.15;
     --main-blur: blur(2px);
     /* ---------- Colors ----------- */
     --color: #243746;
@@ -58,15 +60,19 @@
     --s-col-oliv: #6b8e23;
     --s-col-mage: #a64ca6;
     /* ---------- Theme independent highlight colors ----------- */
+    --s-col-hl-viol: rgba(218,25,145, var(--opacity-06));
     --s-col-hl-teal: rgba(0,50,50, var(--opacity-06));
     --s-col-hl-oran: rgba(100,63,0, var(--opacity-06));
     --s-col-hl-oliv: rgba(107,142,35, var(--opacity-06));
     --s-col-hl-mage: rgba(166,76,166, var(--opacity-06));
 
-    --s-col-hl-teal2: rgba(0,50,50, var(--level4-opacity));
-    --s-col-hl-oran2: rgba(100,63,0, var(--level4-opacity));
-    --s-col-hl-oliv2: rgba(107,142,35, var(--level4-opacity));
-    --s-col-hl-mage2: rgba(166,76,166, var(--level4-opacity));
+    --s-col-hl-red: rgba(255,0,0, var(--opa-10));
+    --s-col-hl-gree: rgba(0,255,0, var(--opa-10));
+    --s-col-hl-blue: rgba(0, 0, 255, var(--opa-10));
+    --s-col-hl-yell: rgba(128,128,0, var(--opa-15));
+    --s-col-hl-turq: rgba(0,128,128, var(--opa-15));
+    --s-col-hl-purp: rgba(128, 0, 128, var(--opa-15));
+
   }
     /* ---------- Dimensions Setup ------------- */
     @media (max-width: 480px) {

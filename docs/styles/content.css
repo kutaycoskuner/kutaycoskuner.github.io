@@ -103,6 +103,11 @@
   white-space: pre-line;
 }
 
+.nuxt-content table tr td:first-child 
+{
+  white-space: nowrap;
+}
+
 .nuxt-content table tr:first-child th {
   border-top: 0;
 }

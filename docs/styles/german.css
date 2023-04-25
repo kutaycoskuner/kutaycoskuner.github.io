@@ -170,6 +170,39 @@
   background-color: black;
 } */
 
+
+.co 
+{
+  opacity: 1;
+}
+
+.co:hover {
+  opacity: .2;
+  transition: opacity 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  background: var(--s-col-hl-blac);
+  padding: 1px;
+  position: relative;
+  /* border-top: 2px solid black; */
+  /* border-right: 2px solid black; */
+  /* border-bottom: none; */
+  /* border-left: none; */
+  /* border-radius: 0 0 20px 0; */
+  /* padding: 20px; */
+}
+
+.co:before, .co:after {
+  position:absolute; content:' ';
+  width:4px; height: 4px;
+  border-color: var(--s-col-viol); /* or whatever colour */
+  border-style:solid; /* or whatever style */
+}
+.co:before {top:0;right:0;border-width: 1px 1px 0 0}
+.co:after {bottom:0;left:0;border-width: 0 0 1px 1px}
+/* .co>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0} */
+/* .co>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px} */
+
 /* ------------------------------ */
 /* line highlights                */
 /* ------------------------------ */

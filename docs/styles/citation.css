@@ -13,8 +13,8 @@ i {
 }
 
 .sep {
-  color: var(--s-col-viol);
-  background-color: var(--s-col-hl-viol);
+  color: var(--s-col-blac);
+  background-color: var(--s-col-hl-blac);
   border-radius: var(--highlight-border-radius);
   padding: 0.1em 0.1em;
 }
@@ -51,8 +51,8 @@ i {
 }
 
 .how {
-  background-color: var(--s-col-hl-oliv);
-  color: var(--s-col-oliv);
+  background-color: var(--s-col-hl-sea);
+  color: var(--s-col-sea);
   border-radius: var(--highlight-border-radius);
   padding: 0.1em 0.1em;
 }

@@ -11,10 +11,11 @@
     --navigation-height: 100px;
     --page-width-mobile: 98%;
     --page-width-tablet: 96%;
-    --page-width-pc: 54%;
-    --page-width: 54%;
+    --page-width-pc: 60%;
+    --page-width: 60%;
     --page-width-max: 1920px;
     --font-size: 1em;
+    --superscript: 0.3em;
     --border-radius: 4px;
     --highlight-border-radius: 2px;
     /* ---------- Other ----------- */
@@ -35,6 +36,7 @@
     --color-transparent2: rgba(14,22,27, var(--level2-opacity));
     --color-transparent3: rgba(14,22,27, var(--level3-opacity));
     --color-transparent4: rgba(14,22,27, var(--level4-opacity));
+    --color-transparent5: rgba(14,22,27, var(--opa-10));
     --color-border: #ddd;
     --col-highlight: rgba(232,236,237, var(--level1-opacity));
     --col-hl-1: rgba(232,236,237, var(--level1-opacity));

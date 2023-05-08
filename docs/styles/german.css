@@ -170,45 +170,269 @@
   background-color: black;
 } */
 
+/* --------------------------------------------------------------------------- */
+/* verb conjugations                                                           */
+/* --------------------------------------------------------------------------- */
 
-.co 
+/* 
+  yeni bir sey eklemek icin 
+  1. border-bottom: rengi degistir
+  2. content de yazmasini istedigin seyi degistir
+*/
+
+.inf
 {
-  opacity: 1;
-}
-
-.co:hover {
-  opacity: .2;
-  transition: opacity 0.3s;
-  display: inline-block;
-  cursor: pointer;
-  background: var(--s-col-hl-blac);
-  padding: 1px;
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
   position: relative;
-  /* border-top: 2px solid black; */
-  /* border-right: 2px solid black; */
-  /* border-bottom: none; */
-  /* border-left: none; */
-  /* border-radius: 0 0 20px 0; */
-  /* padding: 20px; */
+  border-radius: var(--highlight-border-radius);
 }
 
-.co:before, .co:after {
-  position:absolute; content:' ';
-  width:4px; height: 4px;
-  border-color: var(--s-col-viol); /* or whatever colour */
-  border-style:solid; /* or whatever style */
+.inf:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-blue);
 }
-.co:before {top:0;right:0;border-width: 1px 1px 0 0}
-.co:after {bottom:0;left:0;border-width: 0 0 1px 1px}
-/* .co>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0} */
-/* .co>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px} */
+
+.inf::before {
+  color: var(--color);
+  content: "infinitiv";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.inf:hover::before {
+  opacity: 0.8;
+}
+
+.inf:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+.par1
+{
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.par1:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-yell);
+}
+
+.par1::before {
+  color: var(--color);
+  content: "partizip 1";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.par1:hover::before {
+  opacity: 0.8;
+}
+
+.par1:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+.par2
+{
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.par2:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-teal);
+}
+
+.par2::before {
+  color: var(--color);
+  content: "partizip 2";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.par2:hover::before {
+  opacity: 0.8;
+}
+
+.par2:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+.kon1
+{
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.kon1:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-oran);
+}
+
+.kon1::before {
+  color: var(--color);
+  content: "konjunktiv 1";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.kon1:hover::before {
+  opacity: 0.8;
+}
+
+.kon1:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+.kon2
+{
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.kon2:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-mage);
+}
+
+.kon2::before {
+  color: var(--color);
+  content: "konjunktiv 2";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.kon2:hover::before {
+  opacity: 0.8;
+}
+
+.kon2:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+.prat
+{
+  padding: 0 4px 0 2px;
+  /* background: var(--s-col-hl-purp); */
+  position: relative;
+  border-radius: var(--highlight-border-radius);
+}
+
+.prat:hover
+{
+  color: var(--color-transparent5);
+  border-radius: var(--highlight-border-radius);
+  border-bottom: 1px solid var(--s-col-oliv);
+}
+
+.prat::before {
+  color: var(--color);
+  content: "prät";
+  font-size: 0.8em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.prat:hover::before {
+  opacity: 0.8;
+}
+
+.prat:after {
+  position:absolute; 
+  content:'◥';
+  font-size: var(--superscript);
+}
+
+
+
+
 
 /* ------------------------------ */
 /* line highlights                */
 /* ------------------------------ */
-
-
-
 .hl /* konnektor*/ {
   position: relative;
 }
@@ -227,3 +451,55 @@
   z-index: -2;
   transform: rotate(-1deg);
 }
+
+/* ------------------------------                 */
+/* eve online target marker deneyi                */
+/* ------------------------------                 */
+
+
+/*https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders*/
+/* .inf 
+{
+  opacity: 1;
+}
+
+.inf:hover {
+  opacity: .2;
+  transition: opacity 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  padding: 1px;
+  position: relative;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: none;
+  border-left: none;
+  border-radius: 0 0 20px 0;
+  padding: 20px;
+}
+
+.inf:before, .inf:after {
+  position:absolute; 
+  content:' ';
+  width:4px; height: 4px;
+  border-color: var(--s-col-viol); 
+  border-style:solid; }
+
+.inf>par::after {
+  font-size: 0.7em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transition: opacity .2s;
+  z-index: 100;
+  text-shadow: 0px 1px var(--bg);
+}
+
+.inf:before {top:0;right:0;border-width: 1px 1px 0 0}
+.inf:after {bottom:0;left:0;border-width: 0 0 1px 1px}
+.inf>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0}
+.inf>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px} */

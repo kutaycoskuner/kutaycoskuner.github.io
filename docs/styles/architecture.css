@@ -1,0 +1,26 @@
+@media (min-width: 1025px) {
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+@media (max-width: 480px) {
+  .architecture {
+    font-size: 0.8em;
+  }
+
+  .metadata-grid {
+    padding: 2px;
+  }
+
+  .content-narrativ {
+    padding: 2px;
+  }
+
+  .meta-table th,
+  td {
+    border: 1px solid black; /* Border for table cells */
+  }
+}
+
+img {
+    /* background: var(--bg); */
+}

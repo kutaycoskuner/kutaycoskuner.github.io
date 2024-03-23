@@ -112,7 +112,7 @@
 }
 
 .nuxt-content table tr:nth-child(even) {
-  background: var(--bg-alter);
+  background-color: var(--bg-alter);
 }
 
 .nuxt-content table tr:last-child td {

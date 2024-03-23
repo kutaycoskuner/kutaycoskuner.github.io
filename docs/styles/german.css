@@ -435,11 +435,12 @@
 /* ------------------------------ */
 .hl /* konnektor*/ {
   position: relative;
+  z-index: 0;
 }
 
 .hl::before {
   /* Highlight color */
-  background-color: var(--bg-thertiary);
+  background-color: var(--bg-thertiary) !important; 
   border-radius: var(--highlight-border-radius);
   /* border-style: dotted; */
   content: "";
@@ -448,7 +449,7 @@
   height: 128%;
   left: -2px;
   bottom: 0;
-  z-index: -2;
+  z-index: -1;
   transform: rotate(-1deg);
 }
 

@@ -14,7 +14,7 @@
 :root {
   /* ---------- Not on other color modes ----------- */
   --box-shadow: 0 12px 16px 8px rgba(0, 0, 0, 0.2);
-
+  --color-link-hover-bg: rgba(0,0,0, 0.04);
 
   /* ---------- Dimensions ----------- */
   --navigation-height-mobile: 0px; /* 40 */

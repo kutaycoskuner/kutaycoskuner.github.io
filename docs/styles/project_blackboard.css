@@ -149,7 +149,7 @@
     #box1::after {
         content: "";
         display: block;
-        border-top: 1px solid var(--color-separator);
+        /* border-top: 1px solid var(--color-separator); */
         margin-top: 10px;
         margin-bottom: 10px;
         /* Adjust space below the line */

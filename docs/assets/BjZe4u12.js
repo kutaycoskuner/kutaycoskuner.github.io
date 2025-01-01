@@ -1,0 +1,1 @@
+import{aa as t}from"./BN38_k43.js";const i=t("sb_image_slider",{state:()=>({img_index:-1,img_category:""}),getters:{getImgIndex(e){return e.img_index},getImgCategory(e){return e.img_category}},actions:{setImgIndex(e){this.img_index=e},setImgCategory(e){this.img_category=e}}});export{i as s};

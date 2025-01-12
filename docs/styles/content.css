@@ -23,12 +23,12 @@
 
 .nuxt-content-highlight {
   border-radius: var(--border-radius);
-  background: var(--bg-thertiary);
+  background: var(--bg-2);
 }
 
 .nuxt-content div pre {
   position: relative;
-  background: var(--bg-secondary);
+  background: var(--bg-1);
   border-radius: var(--border-radius);
   word-wrap: break-word;
   white-space: normal;
@@ -38,7 +38,7 @@
 }
 
 .nuxt-content h1 {
-  color: var(--color-transparent2);
+  color: var(--col-transparent2);
   font-size: calc(1.2 * var(--font-size));
   margin-top: calc(var(--font-size));
   margin-bottom: calc(0.2 * var(--font-size));
@@ -49,7 +49,7 @@
 }
 
 .nuxt-content h2 {
-  color: var(--color-primary);
+  color: var(--col-primary);
   opacity: var(--level2-opacity);
   font-size: calc(1.2 * var(--font-size));
   margin-top: calc(var(--font-size));
@@ -95,7 +95,7 @@
 
 .nuxt-content table td {
   padding: 4px 6px 4px 6px;
-  border: 1px solid var(--color-transparent4);
+  border: 1px solid var(--col-transparent4);
   border-top: 0px;
   word-break: break-all;
   word-break: break-word;
@@ -129,7 +129,7 @@
 }
 
 .nuxt-content table thead {
-  border-bottom: 1px solid var(--color-transparent4);
+  border-bottom: 1px solid var(--col-transparent4);
 }
 
 .nuxt-content hr {
@@ -145,7 +145,7 @@
 }
 
 .nuxt-content div pre code {
-  color: var(--color-secondary);
+  color: var(--col-secondary);
 }
 
 .nuxt-content a {
@@ -154,11 +154,11 @@
 }
 
 .nuxt-content a:hover {
-  color: var(--color-link-hover);
+  color: var(--col-link-hover);
 }
 
 .nuxt-content a:active {
-  color: var(--color-link-active);
+  color: var(--col-link-active);
 }
 
 .nuxt-content img {
@@ -308,17 +308,17 @@
 .toc-container .toc-title {
   text-decoration: none;
   opacity: 0.8;
-  color: var(--color-primary);
+  color: var(--col-primary);
 }
 
 .toc-container .toc-content {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--col-primary);
   opacity: 0.8;
 }
 
 .toc-container a {
-  color: var(--color-link);
+  color: var(--col-link);
 }
 
 .toc-container a:hover {
@@ -326,5 +326,5 @@
 }
 
 .toc-container a:active {
-  color: var(--color-link-active);
+  color: var(--col-link-active);
 }

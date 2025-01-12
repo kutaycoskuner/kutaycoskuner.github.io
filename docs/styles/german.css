@@ -52,7 +52,7 @@
 .kon /* konnektor */ 
 {
   padding: 0 4px 0 2px;
-  border: var(--color-transparent2);
+  border: var(--col-transparent2);
   background: var(--s-col-hl-turq);
   position: relative;
   border-radius: var(--highlight-border-radius);
@@ -190,13 +190,13 @@
 
 .inf:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-blue);
 }
 
 .inf::before {
-  color: var(--color);
+  color: var(--col);
   content: "infinitiv";
   font-size: 0.8em;
   opacity: 0;
@@ -231,13 +231,13 @@
 
 .par1:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-yell);
 }
 
 .par1::before {
-  color: var(--color);
+  color: var(--col);
   content: "partizip 1";
   font-size: 0.8em;
   opacity: 0;
@@ -272,13 +272,13 @@
 
 .par2:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-teal);
 }
 
 .par2::before {
-  color: var(--color);
+  color: var(--col);
   content: "partizip 2";
   font-size: 0.8em;
   opacity: 0;
@@ -313,13 +313,13 @@
 
 .kon1:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-oran);
 }
 
 .kon1::before {
-  color: var(--color);
+  color: var(--col);
   content: "konjunktiv 1";
   font-size: 0.8em;
   opacity: 0;
@@ -354,13 +354,13 @@
 
 .kon2:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-mage);
 }
 
 .kon2::before {
-  color: var(--color);
+  color: var(--col);
   content: "konjunktiv 2";
   font-size: 0.8em;
   opacity: 0;
@@ -395,13 +395,13 @@
 
 .prat:hover
 {
-  color: var(--color-transparent5);
+  color: var(--col-transparent5);
   border-radius: var(--highlight-border-radius);
   border-bottom: 1px solid var(--s-col-oliv);
 }
 
 .prat::before {
-  color: var(--color);
+  color: var(--col);
   content: "prät";
   font-size: 0.8em;
   opacity: 0;
@@ -440,7 +440,7 @@
 
 .hl::before {
   /* Highlight color */
-  background-color: var(--bg-thertiary) !important; 
+  background-color: var(--bg-2) !important; 
   border-radius: var(--highlight-border-radius);
   /* border-style: dotted; */
   content: "";

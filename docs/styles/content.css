@@ -7,13 +7,13 @@
   opacity: 0.9;
 }
 
-.nuxt-content span:first-of-type {
+/* .nuxt-content span:first-of-type {
   padding: 0;
   padding-left: var(--font-size);
   text-transform: uppercase;
   font-size: calc(0.7 * var(--font-size));
   opacity: 1;
-}
+} */
 
 .nuxt-content pre span {
   padding: 0 !important;
@@ -201,21 +201,22 @@
   .main {
     margin-top: 5%;
     /* margin-top: calc(1 * var(--navigation-height)); */
-    margin-left: calc((100% - var(--page-width)) / 2);
-    margin-right: calc((100% - var(--page-width)) / 2);
+    margin-left: calc((100% - var(--page-width)) * 48 / 100);
+    margin-right: calc((100% - var(--page-width)) * 48 / 100);
   }
 
   .article {
-    grid-column: 2/10;
+    grid-column: 1/10;
   }
 
   .article .article-meta {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 1rem;
   }
 
   .article .article-meta span {
-    margin: auto 0 0 auto;
+    /* margin: auto 0 0 auto; */
     opacity: 0.4;
   }
 }
@@ -283,9 +284,10 @@
   grid-column-gap: calc(2 * var(--main-font-size));
 }
 
-.article -article-meta h1 {
+
+.article .article-meta h1 {
+  font-size: calc(2.4 * var(--font-size));
   margin-top: auto;
-  margin-bottom: 0;
 }
 
 .toc-container {
@@ -328,3 +330,18 @@
 .toc-container a:active {
   color: var(--col-link-active);
 }
+
+pre {
+  white-space: pre; /* Ensures line breaks are preserved */
+  font-family: monospace; /* Makes it look like code */
+  font-size: inherit; /* Override this to keep the size consistent */
+  overflow-x: auto; /* Handles long lines with horizontal scrolling */
+}
+
+code {
+  white-space: pre-wrap; 
+  font-family: monospace;
+  font-size: inherit;
+  font-size: 0.75rem;
+}
+

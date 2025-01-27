@@ -1,3 +1,17 @@
+/* ------------------------------------------------------------------------------------ */ 
+/*        information                                                                   */ 
+/* ------------------------------------------------------------------------------------ */ 
+
+/*
+    Description : General css for nuxt markdown rendering
+    Version     : 1.1
+    Last Update : 27.01.2025
+    Author      : lichzelg
+    License     : MIT
+    License URL : https://www.tldrlegal.com/license/mit-license
+*/
+
+
 .inverted-color {
   filter: invert(0.5) !important;
 }
@@ -26,15 +40,39 @@
   background: var(--bg-2);
 }
 
+.nuxt-content div {
+  position: relative;
+}
+
 .nuxt-content div pre {
   position: relative;
+  display: block;
   background: var(--bg-1);
   border-radius: var(--border-radius);
   word-wrap: break-word;
   white-space: normal;
   opacity: var(--level1-opacity);
-  padding-left: calc(2 * var(--font-size));
-  padding-right: calc(2 * var(--font-size));
+  /* padding-left: calc(2 * var(--font-size));
+  padding-right: calc(2 * var(--font-size)); */
+}
+
+.nuxt-content div pre button {
+  all: unset;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  color: currentColor;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  color: var(--col);
+  opacity: .7;
+}
+
+.copy-active {
+  color: #3498db; /* Inherit the color of the parent button */
 }
 
 .nuxt-content h1 {
@@ -145,7 +183,7 @@
 }
 
 .nuxt-content div pre code {
-  color: var(--col-secondary);
+  color: var(--col);
 }
 
 .nuxt-content a {
@@ -194,8 +232,9 @@
   padding: 0;
 }
 
+
 /* ------------------------------------------------------------------------------------ */
-/* ----- Content Commons */
+/*        content commons                                                               */
 /* ------------------------------------------------------------------------------------ */
 @media (min-width: 1025px) {
   .main {
@@ -284,7 +323,6 @@
   grid-column-gap: calc(2 * var(--main-font-size));
 }
 
-
 .article .article-meta h1 {
   font-size: calc(2.4 * var(--font-size));
   margin-top: auto;
@@ -339,9 +377,19 @@ pre {
 }
 
 code {
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   font-family: monospace;
   font-size: inherit;
   font-size: 0.75rem;
 }
 
+/* ------------------------------------------------------------------------------------ */
+/*        override prism                                                                */
+/* ------------------------------------------------------------------------------------ */
+code[class*="language-"], pre[class*="language-"] {
+  text-shadow: none !important; 
+}
+
+.token.operator {
+  background: var(--bg-1) !important;
+}

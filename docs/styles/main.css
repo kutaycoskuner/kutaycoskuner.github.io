@@ -3,8 +3,8 @@
 --------------------------------------------------------------------------------------- */
 /*
     Description : General css template 
-    Version     : 2.1
-    Last Update : 28.01.2025
+    Version     : 2.2
+    Last Update : 29.01.2025
     Author      : lichzelg
     License     : MIT
     License URL : https://www.tldrlegal.com/license/mit-license
@@ -108,7 +108,6 @@
   --bg-1: #f2f2f2;
   --bg-2: #e8eced;
   --bg-transparent: #f6f6f6cc;
-  /* --bg-img: url("../img_bg/noisy-background_2k.jpg"); */
   /* ---------- Theme Independent Colors ----------- */
   /* --s-col-whit: #f6f6f6; */
   /* --s-col-blac: #090909; */
@@ -203,7 +202,7 @@
   --bg-1: #f2f2f2;
   --bg-2: #e8eced;
   --bg-transparent: #f6f6f6cc;
-  --bg-img: url("../images/web_bg/noisy-background_white_512.jpg");
+  --bg-img: url("../images/web_bg/noisy-background_light_1k.jpg");
 }
 
 [color-scheme="dark"],
@@ -228,7 +227,7 @@
   --bg-1: #161616;
   --bg-2: #202020;
   --bg-transparent: #121212cc;
-  --bg-img: url("../images/web_bg/noisy-background_black_512.jpg");
+  --bg-img: url("../images/web_bg/noisy-background_dark_1k.jpg");
 }
 
 .sepia-mode {
@@ -251,7 +250,7 @@
   --bg-1: #e3ceb9; /* f1e760 */
   --bg-2: #eae0c9;
   --bg-transparent: #f1e7d0cc;
-  --bg-img: url("../images/web_bg/noisy-background_sepia_512.jpg");
+  --bg-img: url("../images/web_bg/noisy-background_sepia_1k.jpg");
 }
 
 .inverted-color {

@@ -1,6 +1,6 @@
-/* ------------------------------------------------------------------------------------ */ 
-/*        information                                                                   */ 
-/* ------------------------------------------------------------------------------------ */ 
+/* ------------------------------------------------------------------------------------ */
+/*        information                                                                   */
+/* ------------------------------------------------------------------------------------ */
 
 /*
     Description : General css for nuxt markdown rendering
@@ -10,7 +10,6 @@
     License     : MIT
     License URL : https://www.tldrlegal.com/license/mit-license
 */
-
 
 .inverted-color {
   filter: invert(0.5) !important;
@@ -36,8 +35,9 @@
 }
 
 .nuxt-content-highlight {
+  position: relative;
   border-radius: var(--border-radius);
-  background: var(--bg-2);
+  /* background: var(--bg-2); */
 }
 
 .nuxt-content div {
@@ -65,10 +65,10 @@
   color: currentColor;
   cursor: pointer;
   position: absolute;
-  right: .5rem;
-  top: .5rem;
+  right: 0.5rem;
+  top: 0.5rem;
   color: var(--col);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .copy-active {
@@ -232,7 +232,6 @@
   padding: 0;
 }
 
-
 /* ------------------------------------------------------------------------------------ */
 /*        content commons                                                               */
 /* ------------------------------------------------------------------------------------ */
@@ -370,6 +369,22 @@
   color: var(--col-link-active);
 }
 
+.code-title {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  padding: 0.2rem 1.1rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  border-bottom-color: var(--col-border);
+}
+
+.title-text {
+  font-size: .9rem;
+}
+
 pre {
   white-space: pre; /* Ensures line breaks are preserved */
   font-family: monospace; /* Makes it look like code */
@@ -384,11 +399,27 @@ code {
   font-size: 0.75rem;
 }
 
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 1rem; /* Adjust spacing between term and definition */
+  row-gap: 0.5rem; /* Adjust spacing between rows */
+  align-items: center;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0; /* Remove default margin to keep it inline */
+}
+
 /* ------------------------------------------------------------------------------------ */
 /*        override prism                                                                */
 /* ------------------------------------------------------------------------------------ */
-code[class*="language-"], pre[class*="language-"] {
-  text-shadow: none !important; 
+code[class*="language-"],
+pre[class*="language-"] {
+  margin-top: 0 !important;
+  text-shadow: none !important;
 }
 
 .token.operator {

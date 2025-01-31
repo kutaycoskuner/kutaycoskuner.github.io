@@ -141,10 +141,6 @@
   white-space: pre-line;
 }
 
-.nuxt-content table tr td:first-child {
-  /* white-space: nowrap; */
-}
-
 .nuxt-content table tr:first-child th {
   border-top: 0;
 }
@@ -418,6 +414,7 @@ dd {
 /* ------------------------------------------------------------------------------------ */
 code[class*="language-"],
 pre[class*="language-"] {
+  padding: .5rem 1rem 1rem 1rem !important;
   margin-top: 0 !important;
   text-shadow: none !important;
 }

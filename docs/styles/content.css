@@ -235,8 +235,8 @@
   .main {
     margin-top: 5%;
     /* margin-top: calc(1 * var(--navigation-height)); */
-    margin-left: calc((100% - var(--page-width)) * 48 / 100);
-    margin-right: calc((100% - var(--page-width)) * 48 / 100);
+    margin-left: calc((100% - var(--page-width))  * 50 / 100);
+    margin-right: calc((100% - var(--page-width)) * 50 / 100);
   }
 
   .article {
@@ -247,6 +247,16 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .article .article-meta .to-pdf {
+    position: absolute;
+    top: 6em;
+    right: 0;
+    width: 4rem;
+    height: 4rem; 
+    justify-self: end;
   }
 
   .article .article-meta span {
@@ -415,8 +425,15 @@ dd {
 code[class*="language-"],
 pre[class*="language-"] {
   padding: .5rem 1rem 1rem 1rem !important;
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
   text-shadow: none !important;
+}
+
+.language-plaintext {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 2rem !important;
+  background: transparent !important;
 }
 
 .token.operator {
